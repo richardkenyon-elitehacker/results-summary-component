@@ -125,21 +125,37 @@ h3.summary {
 .summary .content .reaction {
     background-color: var(--red-50);
 }
-
-.summary .content .memory {
-    background-color: var(--yellow-50);
+.summary .content .reaction p {
+    color: var(--red-400);
 }
 
 .summary .content .memory {
     background-color: var(--yellow-50);
+}
+.summary .content .memory p {
+    color: var(--yellow-400);
 }
 
 .summary .content .verbal {
     background-color: var(--green-50);
 }
+.summary .content .verbal p {
+    color: var(--green-500);
+}
 
 .summary .content .visual {
     background-color: var(--blue-50);
+}
+.summary .content .visual p {
+    color: var(--blue-800);
+}
+
+.score .top {
+    color: black;
+}
+
+.score .bottom {
+    color: rgb(0, 0, 0, 0.5);
 }
 
 button.continue {
@@ -151,4 +167,5 @@ button.continue {
     color: white;
     font-size: 18px;
     font-weight: bold;
+    margin-top: 24px;
 }
