@@ -19,16 +19,19 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  line-height: 130%;
 }
 
 .container {
     width: 375px;
     height: 809px;
     margin: 200px auto;
+    border: 1px solid black;
 }
 
 .results {
     height: 356px;
+    box-sizing: border-box;
     background: var(--gradient-2);
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
@@ -46,7 +49,7 @@ body {
     text-align: justify;
 }
 
-.results .content .score {
+.results .content .scorecircle {
     width: 140px;
     height: 140px;
     background: var(--gradient-1);
@@ -60,20 +63,33 @@ body {
 .results .content h2 {
     margin: 0;
     padding: 0;
-    margin-top: 24px;
     color: white;
 }
 
-.score span {
+.results .content h3 {
+    margin: 32px 0 0 0;
+    font-size: 18px;
+}
+
+.results .content p {
+    font-size: 16px;
+}
+
+.score {
+    margin: 24px 0;
+}
+
+.scorecircle span {
     display: block;
 }
 
-.score .points {
+.scorecircle .points {
     color: white;
     font-size: 56px;
+    line-height: 100%;
 }
 
-.score .out-of {
+.scorecircle .out-of {
     font-size: 16px;
     font-weight: bold;
     color: var(--navy-200);
@@ -81,15 +97,20 @@ body {
 
 .summary .content {
     margin: 0 auto;
+    padding: 0 30px;
     text-align: center;
-    width: 365px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+h3.summary {
+    text-align: left;
 }
 
 .summary .content .bubble {
     display: flex;
     height: 56px;
     align-items: center;
-    background-color: var(--red-50);
     margin: 24px 0;
     border-radius: 12px;
     padding: 0 20px;
@@ -98,4 +119,35 @@ body {
 
 .summary .content .bubble img {
     margin-right: 16px;
+}
+
+.summary .content .reaction {
+    background-color: var(--red-50);
+}
+
+.summary .content .memory {
+    background-color: var(--yellow-50);
+}
+
+.summary .content .memory {
+    background-color: var(--yellow-50);
+}
+
+.summary .content .verbal {
+    background-color: var(--green-50);
+}
+
+.summary .content .visual {
+    background-color: var(--blue-50);
+}
+
+button.continue {
+    height: 56px;
+    width: 100%;
+    border-radius: 128px;
+    border: none;
+    background-color: var(--navy-950);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
