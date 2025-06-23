@@ -105,13 +105,14 @@ body {
 
 h3.summary {
     text-align: left;
+    margin: 24px 0;
 }
 
 .summary .content .bubble {
     display: flex;
     height: 56px;
     align-items: center;
-    margin: 24px 0;
+    margin: 16px 0;
     border-radius: 12px;
     padding: 0 20px;
     justify-content: space-between;
