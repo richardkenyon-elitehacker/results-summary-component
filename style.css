@@ -65,6 +65,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    font-weight: bold;
 }
 
 .results .content h3 {
@@ -108,6 +109,7 @@ body {
 h3.summary {
     text-align: left;
     margin: 24px 0;
+    color: var(--navy-950);
 }
 
 .summary .content .bubble {
