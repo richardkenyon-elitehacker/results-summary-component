@@ -1,5 +1,6 @@
 :root {
     --navy-950: #303b59;
+    --navy-950-alpha-50: #303b5980;
     --navy-200: #cac9ff;
     --navy-50: #ecf2ff;
     --blue-800: #1125d6;
@@ -87,6 +88,7 @@ body {
     color: white;
     font-size: 56px;
     line-height: 100%;
+    font-weight: 800;
 }
 
 .scorecircle .out-of {
@@ -116,6 +118,7 @@ h3.summary {
     border-radius: 12px;
     padding: 0 20px;
     justify-content: space-between;
+    font-weight: 500;
 }
 
 .summary .content .bubble img {
@@ -150,12 +153,17 @@ h3.summary {
     color: var(--blue-800);
 }
 
+.score {
+    font-weight: bold;
+}
+
 .score .top {
-    color: black;
+    color: var(--navy-950);
+    margin-right: 8px;
 }
 
 .score .bottom {
-    color: rgb(0, 0, 0, 0.5);
+    color: var(--navy-950-alpha-50);
 }
 
 button.continue {
@@ -168,4 +176,5 @@ button.continue {
     font-size: 18px;
     font-weight: bold;
     margin-top: 24px;
+    display: block;
 }
