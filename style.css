@@ -28,8 +28,8 @@ body {
     min-width: 375px;
     min-height: 809px;
     border: 1px solid black;
-    width: 75%;
-    height: 50vh;
+    width: 100%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
 }
@@ -197,6 +197,7 @@ button.continue {
         border: none;
         min-height: 500px;
         box-shadow: 0 30px 60px 0 #3d6cec26;
+        max-width: 686px;
     }
 
     .results {
@@ -207,6 +208,18 @@ button.continue {
     .results .content {
         justify-content: center;
     }
+    .results .content h3 {
+        font-size: 24px;
+    }
+
+    .results .content .scorecircle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .score {
+        margin: 32px 0;
+    }
 
     .summary {
         width: 100%;
@@ -216,6 +229,7 @@ button.continue {
         height: 100%;
         justify-content: center;
         max-width: 269px;
+        box-sizing: border-box;
     }
 
     .summary .content h3.summary {
@@ -224,5 +238,14 @@ button.continue {
     }
     button.continue {
         margin-top: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 736px;
+    }
+    .summary .content {
+        max-width: 288px;
     }
 }
