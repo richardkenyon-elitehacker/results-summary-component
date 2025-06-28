@@ -285,4 +285,7 @@ button.continue:hover {
     .summary .content {
         max-width: 288px;
     }
+    .results .content p {
+        max-width: 260px;
+    }
 }
