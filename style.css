@@ -208,10 +208,17 @@ button.continue {
     .results .content {
         justify-content: center;
     }
+    .results .content h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
     .results .content h3 {
+        /*margin-top: 18px;*/
         font-size: 24px;
     }
-
+    .results .content p {
+        font-size: 18px;
+    }
     .results .content .scorecircle {
         width: 200px;
         height: 200px;
@@ -219,6 +226,12 @@ button.continue {
 
     .score {
         margin: 32px 0;
+    }
+    .scorecircle .points {
+        font-size: 72px;
+    }
+    .scorecircle .out-of {
+        font-size: 18px;
     }
 
     .summary {
@@ -234,8 +247,13 @@ button.continue {
 
     .summary .content h3.summary {
         font-size: 24px;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
     }
+    .summary .content .bubble {
+        display: flex;
+        font-size: 18px;
+    }
+
     button.continue {
         margin-top: 16px;
     }
