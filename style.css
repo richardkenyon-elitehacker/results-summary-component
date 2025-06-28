@@ -139,7 +139,11 @@ h3.summary {
     font-weight: 500;
 }
 
-.summary .content .bubble img {
+.summary .content .bubble .desc {
+    display: flex;
+}
+
+.summary .content .bubble .desc img {
     margin-right: 16px;
 }
 
