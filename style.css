@@ -187,12 +187,17 @@ button.continue {
     width: 100%;
     border-radius: 128px;
     border: none;
-    background-color: var(--navy-950);
+    background: var(--gradient-2);
     color: white;
     font-size: 18px;
     font-weight: bold;
     margin-top: 8px;
     display: block;
+}
+
+button.continue:active {
+    background: none;
+    background-color: var(--navy-950);
 }
 
 @media (min-width: 768px) {
